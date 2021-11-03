@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/sudoku" />
+
+    <TextView
+        android:id="@+id/home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:text="112448 \t SUDOKU" />
+
+    <Button
+        android:id="@+id/solution_button"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:background="#000000"
+        android:onClick="openSolution"
+        android:layout_height="wrap_content"
+        android:text="get solution" />
+
+    <TextView
+        android:id="@+id/copyright_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"
+        android:text="©Copyright Eugene Ikonya Cat 1" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
